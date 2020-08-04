@@ -1,0 +1,41 @@
+{
+    "name": "CodeLink",
+    "scopeName": "source.codelink",
+    "fileTypes": [
+        "lcs"
+    ],
+    "patterns": [
+        {
+            "include": "source.cs"
+        }
+    ],
+    "repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.codelink",
+					"match": "\\b(#if|#elseif|#else|#endif|start)\\b"
+				},
+                {
+                    "match": "\\b(?:(isDefined))\\b\\s*\\b([_[:alpha:]][_[:alnum:]]*)\\b",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.preprocessor.codelink"
+                        },
+                        "2": {
+                            "name": "entity.name.variable.preprocessor.symbol.codelink"
+                        }
+                    }
+                },
+                {
+                    "name": "keyword.type.codelink",
+                    "match": "\\b(\\^)(bool|byte|char|decimal|double|float|int|long|object|sbyte|short|string|uint|ulong|ushort|void|dynamic)\\b"
+                },
+                {
+                    "name": "keyword.type.codelink",
+                    "match": "\\b(bool|byte|char|decimal|double|float|int|long|object|sbyte|short|string|uint|ulong|ushort|void|dynamic)(\\^)\\b"
+                }
+			]
+		}
+	}
+}

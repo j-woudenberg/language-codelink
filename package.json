@@ -1,0 +1,13 @@
+{
+    "name": "language-codelink",
+    "main": "./lib/language-codelink",
+    "version": "0.0.0",
+    "description": "A syntax highlighting grammar for the CodeLink language",
+    "keywords": [],
+    "repository": "https://github.com/j-woudenberg/language-codelink",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {}
+}
